@@ -13,12 +13,14 @@ fi
 
 #Run these commands in your terminal to add Homebrew to your PATH:
 echo >> $HOME/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+$(/opt/homebrew/bin/brew shellenv) >> $HOME/.zprofile
 
 #Check that brew install is fully functionnal
 brew doctor
 brew update
+
+#
+brew install git
 
 #cask is a homebrew extension to install gui apps (google chrome,  visual studio code, etc)
 brew install homebrew/cask
