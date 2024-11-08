@@ -15,16 +15,10 @@ fi
 brew doctor
 brew update
 
-#cask seem to be a good solution for big binary install
+#cask is a homebrew extension to install gui apps (google chrome,  visual studio code, etc)
 brew install caskroom/cask/brew-cask
 
 
-
-
-echo "Installing python dev environnement"
-brew install python
-brew linkapps python
-pip install virtualenv
 mkdir -p ~/Sandbox/Projects ~/Sandbox/Virtualenvs
 
 exit 0
