@@ -8,7 +8,7 @@
 if [ ! $(which brew) ] 
 then
     echo "  Installing Homebrew (check /tmp/homebrew-install.log to be sure everything went smoothly)"
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 2> /tmp/homebrew-install.log
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 2> /tmp/homebrew-install.log
 fi
 
 #Check that brew install is fully functionnal
