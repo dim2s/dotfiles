@@ -20,8 +20,5 @@ brew update
 #
 brew install git
 
-#cask is a homebrew extension to install gui apps (google chrome,  visual studio code, etc)
-brew install homebrew/cask
-
 
 exit 0
