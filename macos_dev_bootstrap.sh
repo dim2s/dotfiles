@@ -21,4 +21,6 @@ brew update
 
 git clone https://github.com/dim2s/dotfiles.git
 
+brew bundle --file $HOME/dotfiles/brewfile
+
 exit 0
