@@ -11,6 +11,11 @@ then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 2> /tmp/homebrew-install.log
 fi
 
+#Run these commands in your terminal to add Homebrew to your PATH:
+echo >> $HOME/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 #Check that brew install is fully functionnal
 brew doctor
 brew update
@@ -18,7 +23,5 @@ brew update
 #cask is a homebrew extension to install gui apps (google chrome,  visual studio code, etc)
 brew install caskroom/cask/brew-cask
 
-
-mkdir -p ~/Sandbox/Projects ~/Sandbox/Virtualenvs
 
 exit 0
