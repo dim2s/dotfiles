@@ -3,6 +3,7 @@
 # Just few lines to install tools that I might need using Homebrew
 #
 
+softwareupdate --install-rosetta --agree-to-license
 
 #Check that  Homebrew is not installed yet
 if [ ! $(which brew) ] 
