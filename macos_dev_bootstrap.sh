@@ -17,8 +17,4 @@ fi
 brew doctor
 brew update
 
-#
-brew install git
-
-
 exit 0
