@@ -19,4 +19,6 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>$HOME/.zprofile
 brew doctor
 brew update
 
+git clone https://github.com/dim2s/dotfiles.git
+
 exit 0
