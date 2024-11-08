@@ -21,7 +21,7 @@ brew doctor
 brew update
 
 #cask is a homebrew extension to install gui apps (google chrome,  visual studio code, etc)
-brew install caskroom/cask/brew-cask
+brew install homebrew/cask
 
 
 exit 0
