@@ -12,7 +12,6 @@ then
 fi
 
 #Run these commands in your terminal to add Homebrew to your PATH:
-echo >> $HOME/.zprofile
 $(/opt/homebrew/bin/brew shellenv) >> $HOME/.zprofile
 
 #Check that brew install is fully functionnal
